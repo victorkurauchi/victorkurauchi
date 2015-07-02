@@ -1,0 +1,373 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(142, 142, 214);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* LAYOUT CSS */
+#layout {
+    padding-left: 25%; /* "left col (nav + list)" width */
+    position: relative;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    margin-left: -25%;
+    background: rgb(15, 17, 24);
+    color: #fff;
+}
+
+.header {
+    margin: 50% 2em 0;
+    text-align: right;
+}
+
+.brand-title,
+.brand-tagline {
+    margin: 0;
+}
+.brand-title {
+    text-transform: uppercase;
+}
+.brand-tagline {
+    font-weight: 300;
+    color: rgb(142, 142, 214);
+}
+
+.about p {
+    font-size: 13px;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.nav-item a {
+    background: transparent;
+    border: 3px solid rgb(103, 103, 180);
+    color: #fff;
+    margin-top: 1em;
+}
+.nav-item a:hover,
+.nav-item a:focus {
+    border: 3px solid rgb(142, 142, 214);
+    color: rgb(142, 142, 214);
+    text-decoration: none;
+}
+
+.content-subhead {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    padding: 2em 3em 0;
+}
+
+.post {
+    padding-bottom: 2em;
+}
+.post-title {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 0.2em;
+}
+.post-avatar {
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}
+.post-description {
+    font-family: Georgia, "Cambria", serif;
+    color: #444;
+    line-height: 1.8em;
+}
+.post-meta {
+    color: #999;
+    font-size: 90%;
+    margin: 0;
+}
+
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+}
+    .post-category-design {
+        background: #5aba59;
+    }
+    .post-category-pure {
+        background: #4d85d1;
+    }
+    .post-category-yui {
+        background: #8156a7;
+    }
+    .post-category-js {
+        background: #df2d4f;
+    }
+
+.post-images {
+    margin: 1em 0;
+}
+.post-image-meta {
+    margin-top: -3.5em;
+    margin-left: 1em;
+    color: #fff;
+    text-shadow: 0 1px 1px #333;
+}
+
+.footer {
+    text-align: center;
+    padding: 1em 0;
+}
+.footer a {
+    color: #ccc;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
+}
+
+
+
+#social-networks {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.social-network {
+  background: url('../images/social-networks.png') no-repeat top left;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+} 
+
+.twitter {
+  background-position: -1134px 0;
+}
+
+.social-network.twitter:hover, .active .social-network.twitter {
+  opacity: .5;
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+.tumblr {
+  background-position: -1050px 0;
+}
+
+.social-network.tumblr:hover, .active .social-network.tumblr {
+  opacity: .5;
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+.facebook {
+  background-position: -210px 0;
+}
+
+.social-network.facebook:hover, .active .social-network.facebook {
+  opacity: .5;
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+.linkedin {
+  background-position: -504px 0;
+}
+
+.social-network.linkedin:hover, .active .social-network.linkedin {
+  opacity: .5;
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+.pinterest {
+  background-position: -756px 0;
+}
+
+.social-network.pinterest:hover, .active .social-network.pinterest {
+  opacity: .5;
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+.googleplus {
+  background-position: -336px 0;
+}
+
+.social-network.googleplus:hover, .active .social-network.googleplus {
+  opacity: .5;
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+.email {
+  background-position: -1260px 0;
+}
+
+.social-network.email:hover, .active .social-network.email {
+  opacity: .5;
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+.instagram {
+  background-position: -378px 0;
+}
+
+.social-network.instagram:hover, .active .social-network.instagram {
+  opacity: .5;
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+#social-networks a {
+  margin: 0 8px 12px 0;
+}
+
+.clearfix {
+  clear:both;
+}
+
+.main-content h3 {
+  font-weight: 300;
+  margin: 0;
+  color: #ccc;
+  font-size: 1.5em;
+}
+
+.main-content p {
+  color: #777;
+  line-height: 22px;
+}
+
+.header-content {
+  padding: 1em;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.main-content h4 {
+  font-weight: 300;
+  color: #888;
+  font-size: 1.3em;
+}
+
+ul.technical-list {
+  padding: 0px;
+}
+
+ul.technical-list li:first-child {
+  color: black;
+  font-weight: bold;
+}
+
+ul.technical-list li:first-child:before {
+  content: "";
+}
+
+ul.technical-list li {
+  font-size: 13px;
+  color: #777;
+  list-style-type: none;
+}
+
+ul.technical-list li:before { 
+  content: "- ";
+}
+
+.extra-info {
+  float: right;
+  clear: both;
+  color: black;
+}
+
+.extra-info a {
+  color: black;
+}
+
+.post-list {
+  list-style-type: none;
+}
+
+#link-return a {
+  color: white;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        margin: 0;
+    }
+
+    .header {
+        text-align: center;
+        top: auto;
+        margin: 3em auto;
+        position: static;
+    }
+
+    #layout {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 2em 1em 0;
+    }
+}
